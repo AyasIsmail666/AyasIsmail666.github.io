@@ -1,128 +1,32 @@
-baseURL: "https://AyasIsmail666.github.io/"
+baseURL: "https://ayasismail666.github.io/"
+languageCode: "en-us"
 title: "Ayas Ismail"
-theme: PaperMod
+theme: "PaperMod"
 
-enableInlineShortcodes: true
-enableRobotsTXT: true
-pagination:
-  pagerSize: 20
+params:
+  author: "Ayas Ismail"
+  description: "Cloud | Machine Learning | IoT"
+  defaultTheme: light
 
-taxonomies:
-  tag: tags
+  social:
+    - name: "GitHub"
+      url: "https://github.com/ayasismail666"
+    - name: "LinkedIn"
+      url: "https://linkedin.com/in/your-profile"
+    - name: "Email"
+      url: "mailto:yourname@email.com"
 
 menu:
   main:
-    - name: Portfolio
-      url: portfolio/
-      weight: 1
-    - name: Projects
-      url: projects/
-      weight: 2
-    - name: Data
-      url: data/
-      weight: 3
-    - name: Learning Plan
-      url: learning-plan/
-      weight: 4
-    - name: Courses
-      url: courses/
-      weight: 5
-    - name: Tags
-      url: tags/
-      weight: 6
-    - name: Blog
-      url: blog/
-      weight: 7
-    - name: Articles
-      url: articles/
-      weight: 8
-    - name: Archive
-      url: archive/
-      weight: 9
-
-params:
-  description: "HND Cloud Networking Student | IoT & Cybersecurity Explorer | Building innovative tools & dashboards."
-  author: "Ayas Ismail"
-  DateFormat: "January 2006"
-  defaultTheme: light
-  hideFooter: false
-  disableThemeToggle: false
-  ShowShareButtons: false
-  ShowReadingTime: false
-  disableSpecial1stPost: true
-  disableAnchoredHeadings: true
-  ShowPostNavLinks: false
-  ShowBreadCrumbs: false
-  ShowCodeCopyButtons: true
-  ShowAllPagesInArchive: false
-  MainSections: ["projects","courses","data","articles","blog"]
-  ShowToc: false
-  disableScrollToTop: true
-  TocOpen: true
-  ShowWordCount: false
-  UseHugoToc: true
-  comments: false
-  math: false
-
-  profileMode:
-    enabled: true
-    title: "Ayas Ismail"
-    subtitle: "HND Cloud Networking Student | IoT & Cybersecurity Explorer | Building innovative tools & dashboards."
-    imageUrl: "profile.jpg"   # put your profile picture in /static/profile.jpg
-    imageWidth: 160
-    imageHeight: 160
-    buttons:
-      - name: Portfolio
-        url: portfolio/
-      - name: Projects
-        url: projects/
-      - name: Data
-        url: data/
-      - name: Learning Plan
-        url: learning-plan/
-      - name: Courses
-        url: courses/
-      - name: Tags
-        url: tags/
-      - name: Blog
-        url: blog/
-      - name: Articles
-        url: articles/
-      - name: Archive
-        url: archive/
-
-  socialIcons:
-    - name: Email
-      url: mailto:your-email@example.com
-    - name: GitHub
-      url: https://github.com/AyasIsmail666
-    - name: LinkedIn
-      url: https://linkedin.com/in/your-profile
-    - name: Twitter
-      url: https://twitter.com/your-handle
-    - name: YouTube
-      url: https://youtube.com/@yourchannel
-
-assets:
-  disableScrollBarStyle: true
-
-cover:
-  hiddenInList: false
-  hiddenInSingle: true
-
-label:
-  text: "Ayas Ismail"
-  icon: favicon.ico
-  iconHeight: 18
-
-markup:
-  goldmark:
-    renderer:
-      unsafe: true
-  highlight:
-    guessSyntax: true
-    style: autumn 
-  tableOfContents:
-    endLevel: 2
-    ordered: false
-    startLevel: 2
+    - identifier: about
+      name: "About"
+      url: "/about/"
+      weight: 10
+    - identifier: projects
+      name: "Projects"
+      url: "/projects/"
+      weight: 20
+    - identifier: blog
+      name: "Blog"
+      url: "/blog/"
+      weight: 30
